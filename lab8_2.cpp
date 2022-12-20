@@ -21,7 +21,7 @@ Fahsai: 555+ see you Next Monday. Bye Bye \(^ ^)/
 using namespace std;
 
 int main(){
-    string name, movie, date, force;
+    string name, movie, date, text;
     int id;
     cout << "Fahsai: Sawadee ka...Can you tell me your name?" << endl;
     cout << "?????: ";
@@ -34,12 +34,14 @@ int main(){
     cout << "Fahsai: I think you may be GEAR " << (id/10000000)-12 << ". I have a free movie ticket for you." << endl;
     cout << "Fahsai: Let's go to the cinema together!!!" << "\n" << "Fahsai: What movie do you want to watch?" << endl;
     cout << name << ": ";
+    cin.ignore();
     getline(cin,movie);
     cout << "Fahsai: So....which day are you free to go with me?" << endl;
     cout << name << ": ";
     getline(cin,date);
     cout << "Fahsai: " << date << "....that is OK!!! I'm looking forward to watching " << movie << " with you." << endl;
     cout << name << ": ";
-    getline(cin,force);
-    cout << "Fahsai: 555+ see you " << date << ". Bye Bye \(^ ^)/";
+    getline(cin,text);
+    cout << "Fahsai: 555+ see you " << date << ". Bye Bye \\(^ ^)/";
+    return 0;
 }
